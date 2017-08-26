@@ -23,6 +23,92 @@
     <!-- Custom Fonts -->
     <link href="font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
     <link href="http://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,700,300italic,400italic,700italic" rel="stylesheet" type="text/css">
+    <style type="text/css">
+        
+       .btn {
+  display: inline-block;
+  padding: 6px 12px;
+  margin-bottom: 0;
+  font-size: 14px;
+  font-weight: normal;
+  line-height: 1.42857143;
+  text-align: center;
+  white-space: nowrap;
+  vertical-align: middle;
+  cursor: pointer;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+  background-image: none;
+  border: 1px solid transparent;
+  border-radius: 4px;
+  padding: 10px 16px;
+}
+  
+.btn-lg {
+  font-size: 18px;
+  line-height: 1.33;
+  border-radius: 6px;
+}
+
+.btn-primary {
+  color: #fff;
+  background-color: #428bca;
+  border-color: #357ebd;
+}
+
+.btn-primary:hover,
+.btn-primary:focus,
+.btn-primary:active,
+.btn-primary.active,
+.open .dropdown-toggle.btn-primary {
+  color: #fff;
+  background-color: #3276b1;
+  border-color: #285e8e;
+}
+
+/***********************
+  SHARP BUTTONS
+************************/
+.sharp {
+  border-radius:0;
+}
+
+/***********************
+  CUSTON BTN VALUES
+************************/
+
+.btn {
+    padding: 14px 24px;
+    border: 0 none;
+    font-weight: 700;
+    letter-spacing: 1px;
+    font-style: italic;
+    
+}
+.btn:focus, .btn:active:focus, .btn.active:focus {
+    outline: 0 none;
+}
+
+.btn-primary {
+    background: #0099cc;
+    color: #ffffff;
+}
+.btn-primary:hover, .btn-primary:focus, .btn-primary:active, .btn-primary.active, .open > .dropdown-toggle.btn-primary {
+    background: #33a6cc;
+}
+.btn-primary:active, .btn-primary.active {
+    background: #007299;
+    box-shadow: none;
+}
+
+.btn.sharp {
+  border-radius:0;
+}
+
+
+</style>
 
 
 </head>
@@ -71,15 +157,17 @@
 
     <!-- Header -->
      <header id="top" class="header">
-        <div class="text-vertical-center">
+        <div  class="text-vertical-center ">
+        
         	<img src="img/shivjeet.jpg" class="img-circle" height="250px" width="260px" align="center">
-            <h1 id="NAME">SHIVJEET SINGH</h1>
+            <h1 style="font-size: 55px;" id="NAME">SHIVJEET SINGH</h1>
             <i class="fa fa-cog fa-spin fa-3x fa-fw"></i>
 <span class="sr-only">Loading...</span>
-            <h3 style="color:#008899"><b><i class="fa fa-star" aria-hidden="true"></i>The whole secret of a successful life is <br> find out what is one's destiny to <br>do and then do it!!!!<i class="fa fa-star" aria-hidden="true"></i></b></h3>
+            <p style="color:#008899;font-family:cursive;font-size: 20px"><b><i class="fa fa-star" aria-hidden="true"></i>The whole secret of a successful life is <br> find out what is one's destiny <br>to do and then do it!!!!<i class="fa fa-star" aria-hidden="true"></i></b></p>
             <i class="fa fa-cog fa-spin fa-3x fa-fw" aria-hidden="true"></i>
-<span class="sr-only">Saving. Hang tight!</span>
-
+<span class="sr-only">Saving. Hang tight!</span><br>
+       
+       <button type="button" class="btn btn-primary btn-lg sharp" style="margin: 5px;"><a style="text-decoration: none !important;color: white" href="img/shivjeet_resume.pdf" download="shivjeet_resume.pdf"><i class="fa fa-download" aria-hidden="true" ></i> &nbsp;Download Resume</a></button>
         </div>
     
     
@@ -93,7 +181,7 @@
             <div class="row">
                 <div class="col-lg-12 text-center">
                     <h2><strong> About<strong></h2>
-                    <p class="lead" style="color: white;"><b>Software Engineer at Onmobile Global Ltd<br>I am passionate about applying Mathematics and Computer science to solve real world problems.<br>
+                    <p class="lead" style="color: white;font-style: italic;"><b>Software Engineer at Onmobile Global Ltd<br>I am passionate about applying Mathematics and Computer science to solve real world problems.<br>
 			    My areas of interest include Development and Research,Machine Learning and Data Scientist,Artificial Intelligence,Java,Data structure and algorithm  etc.</b></p>
                     <br>
                    
@@ -144,6 +232,22 @@
                                 <p>Redesigned the backend code using design pattern (singleton, doubleton, factory        design pattern) for reduce time complexity. Wrote client server program using java for communication between client and server. Implemented JDBC connection pooling using BoneCP/C3PO/DBCP for manage database connection.</p>
                             </div>
                         </div>
+
+                        <div class="col-md-4 col-sm-6">
+                            <div class="service-item">
+                               <span class="fa-stack fa-4x">
+                               <i class="fa fa-circle fa-stack-2x"></i>
+                               <i class="fa fa-amazon fa-stack-1x text-warning"></i>
+                              </span>
+                             
+                                <h4>
+                                    <strong>Amazon Web Service(AWS)</strong>
+                                </h4>
+                                <p>Studied Amazon Web Service(AWS) document to figure out new ideas related to Compute(EC2), Storage(S3), Databases(RDBS).Perform basic operation and compute different module using AWS SDK for Java. </p>
+                                
+                            </div>
+                        </div>
+
                         <div class="col-md-4 col-sm-6">
                             <div class="service-item">
                                  <span class="fa-stack fa-4x">
@@ -169,7 +273,8 @@
                                 
                             </div>
                         </div>
-
+                      
+                      
                         
                     </div>
 
@@ -190,17 +295,28 @@
     </section>
 
 
-
-
-
-
  <section id="WebApplication" class="services ">
         <div class="container">
             <div class="row text-center">
                 <div class="col-lg-10 col-lg-offset-1">
-                    <h2><strong>WebApplication Projects<strong></h2>
-                    
+                    <h2><strong>WebApplication Projects /Game Project<strong></h2>
                     <div class="row">
+                        
+                         <div class="col-md-4 col-sm-6">
+                            <div class="service-item">
+                               <span class="fa-stack fa-4x">
+                               <i class="fa fa-square-o fa-stack-2x"></i>
+                               <i class="fa fa-codepen fa-stack-1x  text-warning"></i>
+                              </span>
+                                <h4>
+                                    <strong>Algorithm & Data Structure,Games in Python</strong>
+                                </h4>
+                                <p>Analysis of algorithm,Graphs(BFS,DFS,Dijkstra's algorithm,kruskal's algorithm),Sorting (Merge,quick,selection,insertion,bubble sort),Tree,List(Linked list operation),Dynamic Programming (1D(fibonacci,ladder problem ) ,2D(Grid,Edit distanse,Knapsack,lcs problems etc. ),Basic and Mathmatics Algorithm,Puzzle(N-queen,Bactracking problems,Tower of Hannoi)</p><br>
+                                Basic Calculator and Games in Python 
+                                
+                            </div>
+                        </div>
+
                         <div class="col-md-4 col-sm-6">
                             <div class="service-item">
                                  <span class="fa-stack fa-4x">
@@ -216,6 +332,9 @@
 
                             </div>
                         </div>
+                         
+                         
+
                         <div class="col-md-4 col-sm-6">
                             <div class="service-item">
                                  <span class="fa-stack fa-4x">
